@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "TaxiDriver";
+    src: url("/fonts/TaxiDriver.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    background-color: #2574a9;
+}
+
+.container {
+    max-width: 1200px;
+    align-content: center;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-areas: 
+        "lgo ... nav";
+    grid-template-columns: auto 1fr auto;
+}
+.logo {
+    grid-area: lgo;
+}
+.logo img {
+    width: 320px;
+}
+.nav-bar {
+    display: grid;
+    align-content: center;
+    grid-area: nav;
+    font-size: 18px;
+}
+.nav-bar ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+}
+.nav-bar a {
+    color: #c5eff7;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: "TaxiDriver";
+}
+
+main {
+    font-size: 20px;
+}
+section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: "TaxiDriver";
+    font-size: 2em;
+    color: #2574a9;
+}
+
+section:nth-child(odd) {
+    height: 100vh;
+    background-color: #cae1f1;
+}
+section:nth-child(even) {
+    height: 100vh;
+    background-color: #b7d5eb;
+}
